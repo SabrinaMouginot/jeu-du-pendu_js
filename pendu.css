@@ -42,9 +42,9 @@ h1{
     /*fill (le remplissage) transparent évitera que la tête (qui sera ronde) soit remplies.*/
 }
 
-.figure-partie{
+/* .figure-partie{ */
     /*display: none;*/ /*effece le bonhomme*/
-}
+/* } */
 
 .mauvaises-lettres-contenant{
     position: absolute;
@@ -53,4 +53,14 @@ h1{
     display: flex;
     flex-direction: column;
     text-align: right; /*pour aligner les lettres vers la droite*/
+}
+
+.mauvaises-lettres-contenant p{
+    margin: 0 0 5px;
+}
+
+/*GROSSIR LES MAUVAISES LETTRES*/
+.mauvaises-lettres-contenant span{
+    font-size: 24px;
+    font-family: 'Shadows Into Light', 'cursive';
 }
