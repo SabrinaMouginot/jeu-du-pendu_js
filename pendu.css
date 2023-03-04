@@ -41,3 +41,16 @@ h1{
     fill: transparent;
     /*fill (le remplissage) transparent évitera que la tête (qui sera ronde) soit remplies.*/
 }
+
+.figure-partie{
+    /*display: none;*/ /*effece le bonhomme*/
+}
+
+.mauvaises-lettres-contenant{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: right; /*pour aligner les lettres vers la droite*/
+}
