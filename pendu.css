@@ -1,3 +1,10 @@
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Shadows Into Light', cursive; */
+
+*{
+    box-sizing: border-box;
+}
+
 body{
     background-color: #6d7e92;
     color: #fff;
