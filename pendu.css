@@ -8,6 +8,30 @@ font-family: 'Shadows Into Light', cursive; */
 body{
     background-color: #6d7e92;
     color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 3px; /*pour espacer un peu les lettres*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    margin: 0;
+    overflow: hidden; /*si quelque chose dépasse, il sera caché*/
+}
+
+h1{
+    margin: 20px 0 0;
+    font-size: 50px;
+    font-family: 'Shadow Into Light', 'cursive';
+    letter-spacing: 10px;
+    text-shadow: 2px 2px 2px #354961;
+}
+
+.jeu-contenant{
+    padding: 20px 30px;
+    margin: auto;
+    height: 350px;
+    width: 450px;
+    position: relative;
 }
 
 .figure-contenant{
