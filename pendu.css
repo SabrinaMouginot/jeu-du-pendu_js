@@ -1,0 +1,12 @@
+body{
+    background-color: #6d7e92;
+    color: #fff;
+}
+
+.figure-contenant{
+    stroke: #fff; /*stroke = trait en anglais : c'est pour dessiner le trait (sera ici appliqué à l'ensemble de la rubrique svg : donc à l'ensemble du pendu)*/
+    stroke-width: 4px; /*épaissir le trait*/
+    stroke-linecap: round; /*arrondir les coins*/
+    fill: transparent;
+    /*fill (le remplissage) transparent évitera que la tête (qui sera ronde) soit remplies.*/
+}
