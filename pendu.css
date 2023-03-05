@@ -110,4 +110,15 @@ h1{
     background-color: #fff;
     column-rule: #354961;
     border: 0;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.popup button:active{
+    transform: scale(0.98); /*rapetisser le bouton*/
+}
+
+.popup button:focus{
+    outline: 0;
 }
