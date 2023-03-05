@@ -64,3 +64,20 @@ h1{
     font-size: 24px;
     font-family: 'Shadows Into Light', 'cursive';
 }
+
+.mot{
+    display: flex;
+    position: absolute;
+    bottom: 10;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.lettre{
+    border-bottom: 3px solid #354961;
+    display: inline-flex;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
