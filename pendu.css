@@ -85,6 +85,8 @@ h1{
     font-family: 'Shadows Into Light', 'cursive';
 }
 
+/*LE MESSAGE FINAL*/
+
 .popup-contenant{
     background-color: rgba(0, 0, 0, 0.3);
     position: fixed;
@@ -92,7 +94,7 @@ h1{
     bottom: 0;
     left: 0;
     right: 0;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
 }
@@ -117,8 +119,24 @@ h1{
 
 .popup button:active{
     transform: scale(0.98); /*rapetisser le bouton*/
-}
+} /*:active permet de cibler un élément lorsque celui-ci est activé par l'utilisateur. Elle permet de fournir un feedback indiquant que l'activation a bien été détectée par le navigateur. Lorsqu'on a une interaction avec un pointeur, il s'agit généralement du moment entre l'appui sur le pointeur et le relâchement de celui-ci.*/
 
 .popup button:focus{
     outline: 0;
+} /* :focus permet de cibler un élément lorsque celui-ci reçoit le focus (soit il est sélectionné à l'aide du clavier, soit il est activé avec la souris)*/
+
+
+/*NOTIFICATION*/
+
+.notification-contenant{
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px 10px 0 0;
+    padding: 15px 2px;
+    position: absolute; /*pour le laisser en bas de l'écran*/
+    bottom: -80px;
+    transition: transform 0.3 ease-in-out; /* ease-in-out veut dire que ça va aller plus lentement au début qu'à la fin du mouvement*/
+}
+
+.notification-contenant.afficher{ /*On rajoutera la classe "afficher" avec le Javascript*/
+    transform: translateY(-80px);
 }
