@@ -14,7 +14,7 @@ const mots = ['urluberlu','kaleidoscope','libellule','fifrelin','implémentation
 let motSelectionne = mots[Math.floor(Math.random() * mots.length)]; //length parce qu'on ne veut pas un mot random 14 (14e mot dans l'array) si on à seulement 6 mots).
 //floor arrondit au plus bas.
 
-const bonnesLettresArr = ['a'];
+const bonnesLettresArr = ['u','r','l','u','b','e','r','l','u'];
 const mauvaisesLettresArr = [];
 
 //Afficher le mot caché
@@ -30,16 +30,25 @@ function afficherMot() {
                     </span>
                 `
             )
-            .join('') // pour les regrouper ensemble
+            .join('') // pour regrouper les lettres ensemble pour faire le mot
         }
     `;
+
+    const motInterne = motEl.innerText.replace(/\n/g, '');
+    //Pour comparer le mot à deviner et le mot à l ecran. 
+
+    //si notre mot interne est le même mot que notre mot seletionnée, on va dire le message final "bravo tu as gagné!"
+    if(motInterne === motSelectionne){
+        messageFinal.innerText = 'Bravo, Tu as gagné!';
+        popup.style.display = 'flex';
+    }
 
 
 }
 
 afficherMot();
 // ? est comme un if. Si la partie avant contient le lettre alors on affiche la lettre (= lettre après l'?) sinon on n'affiche rien.
-
+// ${} permet d'aller chercher une variable dans les `` .
 
 
 
