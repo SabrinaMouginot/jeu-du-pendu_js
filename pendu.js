@@ -31,6 +31,7 @@ function afficherMot() {
                     </span>
                 `
             )
+            .join('') // pour les regrouper ensemble
         }
     `;
 }
