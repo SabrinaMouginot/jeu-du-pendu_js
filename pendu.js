@@ -14,29 +14,32 @@ const mots = ['urluberlu','kaleidoscope','libellule','fifrelin','implémentation
 let motSelectionne = mots[Math.floor(Math.random() * mots.length)]; //length parce qu'on ne veut pas un mot random 14 (14e mot dans l'array) si on à seulement 6 mots).
 //floor arrondit au plus bas.
 
-const bonnesLettresArr = [''];
+const bonnesLettresArr = ['a'];
 const mauvaisesLettresArr = [];
 
 //Afficher le mot caché
 
 function afficherMot() {
-    motEl.innerText = ` 
+    motEl.innerHTML = ` 
         ${motSelectionne
             .split('')  //séparé par lettre
             .map(   //passer chaque lettre une à la fois
                 lettre =>`
                     <span class="lettre">
-                        ${bonnesLettresArr.includes(lettre) ? lettre :''}   // ? est comme un if. Si la partie avant contient le lettre alors on affiche la lettre (= lettre après l'?) sinon on n'affiche rien.
-                        //
+                        ${bonnesLettresArr.includes(lettre) ? lettre :''}   
                     </span>
                 `
             )
             .join('') // pour les regrouper ensemble
         }
     `;
+
+
 }
 
 afficherMot();
+// ? est comme un if. Si la partie avant contient le lettre alors on affiche la lettre (= lettre après l'?) sinon on n'affiche rien.
+
 
 
 
