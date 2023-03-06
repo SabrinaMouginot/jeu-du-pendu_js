@@ -4,3 +4,5 @@ const rejouerBtn = document.getElementById('play-button');
 const popup = document.getElementById('popup-contenant');
 const notification = document.getElementById('notification-contenant');
 const messageFinal = document.getElementById('message-final');
+
+const figurePartie = document.querySelectorAll('.figure-partie')
