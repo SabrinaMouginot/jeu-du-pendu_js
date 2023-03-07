@@ -59,6 +59,8 @@ window.addEventListener('keydown', e=>{
         //si la lettre fait parti du mot, on l'affiche.
         //si la lettre ne fait pas parti du mot, on ne l'affiche pas
         //Mais on la met dans notre Array de mauvaises lettres.
+        const lettre = e.key;
+        // console.log(lettre);
 
 
     }
