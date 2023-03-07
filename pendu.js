@@ -42,13 +42,38 @@ function afficherMot() {
         messageFinal.innerText = 'Bravo, Tu as gagné!';
         popup.style.display = 'flex';
     }
-
-
 }
+
+
+//EVENT LISTENERS
+
+//window: n'importe où sur la page/ sur la fenêtre
+//keydown: quand on appuie sur les clés de mon clavier (keyup quand on relache la clé)
+//e : l'évènement de notre fct. Ici, l'évènement est la touche que je touche sur mon clavier.
+window.addEventListener('keydown', e=>{
+
+    // console.log(e.keyCode)
+    // chaque touche du clavier est associée à un numéro
+
+    if(e.keyCode >= 65 && e.keyCode <= 90) {
+        //si la lettre fait parti du mot, on l'affiche.
+        //si la lettre ne fait pas parti du mot, on ne l'affiche pas
+        //Mais on la met dans notre Array de mauvaises lettres.
+
+
+    }
+
+
+})
+
+
+
+
+
+
 
 afficherMot();
 // ? est comme un if. Si la partie avant contient le lettre alors on affiche la lettre (= lettre après l'?) sinon on n'affiche rien.
 // ${} permet d'aller chercher une variable dans les `` .
-
 
 
