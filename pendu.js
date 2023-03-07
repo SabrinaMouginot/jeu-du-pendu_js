@@ -7,7 +7,8 @@ const messageFinal = document.getElementById('message-final');
 
 const figurePartie = document.querySelectorAll('.figure-partie');
 
-const mots = ['urluberlu','kaleidoscope','libellule','fifrelin','implémentation','concaténer'];
+const mots = ['urluberlu','kaleidoscope','libellule','fifrelin','implementation','concatener'];
+
 
 // SELECTIONNER UN MOT POUR JOUER 
 
@@ -16,6 +17,7 @@ let motSelectionne = mots[Math.floor(Math.random() * mots.length)]; //length par
 
 const bonnesLettresArr = ['u','r','l','u','b','e','r','l','u'];
 const mauvaisesLettresArr = [];
+
 
 //Afficher le mot caché
 
@@ -45,6 +47,19 @@ function afficherMot() {
 }
 
 
+//AFFICHER LA NOTIFICATION
+
+function afficherNotification(){
+
+    notification.classList.add('afficher');
+
+    setTimeout(()=>{
+        notification.classList.remove('afficher')
+    }, 2000);
+        
+}
+
+
 //EVENT LISTENERS
 
 //window: n'importe où sur la page/ sur la fenêtre
@@ -67,7 +82,7 @@ window.addEventListener('keydown', e=>{
                 bonnesLettresArr.push(lettre)
                 afficherMot()
             }else{
-                // afficherNotification();
+                afficherNotification();
              }
 
         }else{
@@ -76,7 +91,7 @@ window.addEventListener('keydown', e=>{
 
                 // updateMauvaisesLettresEl();
             }else{
-                // afficherNotification();
+                afficherNotification();
             }
         }
 
