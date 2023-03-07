@@ -62,12 +62,23 @@ window.addEventListener('keydown', e=>{
         const lettre = e.key;
         // console.log(lettre);
         if(motSelectionne.includes(lettre)) {
+            //!...includes ... : pas inclue
+            if(!bonnesLettresArr.includes(lettre)){
+                bonnesLettresArr.push(lettre)
+                afficherMot()
+            }else{
+                // afficherNotification();
+             }
 
         }else{
-            
+            if(!mauvaisesLettres.includes(lettre)){
+                mauvaisesLettres.push(lettre);
+
+                // updateMauvaisesLettresEl();
+            }else{
+                // afficherNotification();
+            }
         }
-
-
 
     }
 
