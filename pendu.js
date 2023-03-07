@@ -15,7 +15,7 @@ const mots = ['urluberlu','kaleidoscope','libellule','fifrelin','implementation'
 let motSelectionne = mots[Math.floor(Math.random() * mots.length)]; //length parce qu'on ne veut pas un mot random 14 (14e mot dans l'array) si on à seulement 6 mots).
 //floor arrondit au plus bas.
 
-const bonnesLettresArr = ['u','r','l','u','b','e','r','l','u'];
+const bonnesLettresArr = [];
 const mauvaisesLettresArr = [];
 
 
@@ -45,6 +45,20 @@ function afficherMot() {
         popup.style.display = 'flex';
     }
 }
+
+
+//MAUVAISES LETTRES
+
+function updateMauvaisesLettresEl() {
+
+    //Afficher les mauvaises lettres
+
+    //Afficher le bonhomme
+
+    //Afficher si on a perdu
+
+}
+
 
 
 //AFFICHER LA NOTIFICATION
