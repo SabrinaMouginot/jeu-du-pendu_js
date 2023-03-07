@@ -61,6 +61,12 @@ window.addEventListener('keydown', e=>{
         //Mais on la met dans notre Array de mauvaises lettres.
         const lettre = e.key;
         // console.log(lettre);
+        if(motSelectionne.includes(lettre)) {
+
+        }else{
+            
+        }
+
 
 
     }
