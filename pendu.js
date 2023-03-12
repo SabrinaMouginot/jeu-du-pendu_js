@@ -72,7 +72,10 @@ function updateMauvaisesLettresEl() {
     })
 
     //Afficher si on a perdu
-
+    if(mauvaisesLettresArr.length === figurePartie.length){
+        messageFinal.innerText = 'Malheureusement, tu as perdu! :('
+        popup.style.display = 'flex'
+    }
 }
 
 
