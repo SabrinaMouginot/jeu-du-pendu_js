@@ -138,7 +138,8 @@ window.addEventListener('keydown', e=>{
 
 rejouerBtn.addEventListener('click', ()=>{
     //vider les arrays
-
+    bonnesLettresArr.slice(0); //slice : retrancher jusqu'à 0
+    mauvaisesLettresArr.slice(0);
 })
 
 
