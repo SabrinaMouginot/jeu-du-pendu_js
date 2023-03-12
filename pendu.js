@@ -54,7 +54,8 @@ function updateMauvaisesLettresEl() {
     //Afficher les mauvaises lettres
 
     mauvaisesLettres.innerHTML = `
-        ${mauvaisesLettresArr.map(lettre => `<span>${lettre}</span>
+
+        ${mauvaisesLettresArr.map (lettre => `<span> ${lettre}</span>
         `)}
     `
     
@@ -88,7 +89,7 @@ function afficherNotification(){
 
     setTimeout(()=>{
         notification.classList.remove('afficher')
-    }, 2000);
+    }, 2000); //timer pour que la notification ne reste pas toujours et disparaisse au bout de 2s
         
 }
 
@@ -119,8 +120,8 @@ window.addEventListener('keydown', e=>{
              }
 
         }else{
-            if(!mauvaisesLettres.includes(lettre)){
-                mauvaisesLettres.push(lettre);
+            if(!mauvaisesLettresArr.includes(lettre)){
+                mauvaisesLettresArr.push(lettre);
 
                 updateMauvaisesLettresEl();
             }else{
@@ -138,8 +139,17 @@ window.addEventListener('keydown', e=>{
 
 rejouerBtn.addEventListener('click', ()=>{
     //vider les arrays
-    bonnesLettresArr.slice(0); //slice : retrancher jusqu'à 0
-    mauvaisesLettresArr.slice(0);
+    bonnesLettresArr.splice(0); //splice : retrancher jusqu'à 0
+    mauvaisesLettresArr.splice(0);
+
+    motSelectionne = mots[Math.floor(Math.random() * mots.length)];
+
+    afficherMot();
+
+    updateMauvaisesLettresEl();
+
+    popup.style.display = 'none';
+
 })
 
 
