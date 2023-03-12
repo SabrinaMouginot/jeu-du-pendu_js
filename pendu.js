@@ -53,7 +53,23 @@ function updateMauvaisesLettresEl() {
 
     //Afficher les mauvaises lettres
 
+    mauvaisesLettres.innerHTML = `
+        ${mauvaisesLettresArr.map(lettre => `<span>${lettre}</span>
+        `)}
+    `
+    
+
     //Afficher le bonhomme
+    figurePartie.forEach((partie, index) =>{
+        const erreurs =  mauvaisesLettresArr.length;
+
+        if(index < erreurs){
+            partie.style.display = 'block';
+        }else{
+            partie.style.display = 'non'
+        }
+
+    })
 
     //Afficher si on a perdu
 
@@ -103,7 +119,7 @@ window.addEventListener('keydown', e=>{
             if(!mauvaisesLettres.includes(lettre)){
                 mauvaisesLettres.push(lettre);
 
-                // updateMauvaisesLettresEl();
+                updateMauvaisesLettresEl();
             }else{
                 afficherNotification();
             }
