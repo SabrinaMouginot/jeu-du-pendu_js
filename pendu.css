@@ -42,9 +42,9 @@ h1{
     /*fill (le remplissage) transparent évitera que la tête (qui sera ronde) soit remplies.*/
 }
 
-/* .figure-partie{ */
-    /*display: none;*/ /*effece le bonhomme*/
-/* } */
+.figure-partie{ 
+    display: none;/*efface le bonhomme*/
+}
 
 .mauvaises-lettres-contenant{
     position: absolute;

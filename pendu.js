@@ -66,7 +66,7 @@ function updateMauvaisesLettresEl() {
         if(index < erreurs){
             partie.style.display = 'block';
         }else{
-            partie.style.display = 'non'
+            partie.style.display = 'none'
         }
 
     })
