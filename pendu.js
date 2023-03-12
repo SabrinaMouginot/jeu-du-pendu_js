@@ -134,8 +134,12 @@ window.addEventListener('keydown', e=>{
 })
 
 
+// Rejouer et redémarrer
 
+rejouerBtn.addEventListener('click', ()=>{
+    //vider les arrays
 
+})
 
 
 
